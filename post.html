@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nazar Web</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #09090f;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 25px;
+      background: #141420;
+      border-bottom: 1px solid #333;
+    }
+
+    .logo {
+      color: #9b6dff;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 110px 20px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 7vw, 65px);
+      margin-bottom: 15px;
+      animation: appear 1s ease;
+    }
+
+    h1 span { color: #9b6dff; }
+
+    p {
+      color: #aaa;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 16px 35px;
+      background: #8250ff;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-size: 17px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #a580ff;
+      transform: scale(1.06);
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px 20px 90px;
+    }
+
+    .card {
+      background: #171725;
+      padding: 30px;
+      border-radius: 18px;
+      width: 260px;
+      border: 1px solid #303045;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: #8250ff;
+    }
+
+    .card h2 { color: #b292ff; }
+
+    footer {
+      padding: 25px;
+      color: #777;
+      background: #11111a;
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+        transform: translateY(25px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">NAZAR WEB</div>
+  </header>
+
+  <main>
+    <h1>Привет, я <span>Nazar</span> 👋</h1>
+    <p>Добро пожаловать на мой первый сайт!</p>
+    <p>Создан с помощью HTML, CSS и JavaScript.</p>
+    <button onclick="welcome()">Нажми сюда 🚀</button>
+  </main>
+
+  <section class="cards">
+    <div class="card">
+      <h2>⚡ Скорость</h2>
+      <p>Быстрый и современный сайт.</p>
+    </div>
+
+    <div class="card">
+      <h2>🎨 Дизайн</h2>
+      <p>Красивый тёмный интерфейс.</p>
+    </div>
+
+    <div class="card">
+      <h2>🌍 Онлайн</h2>
+      <p>Мой первый интернет-проект.</p>
+    </div>
+  </section>
+
+  <footer>© 2026 Nazar Web</footer>
+
+  <script>
+    function welcome() {
+      alert("Добро пожаловать на Nazar Web! 🚀");
+    }
+  </script>
+
+</body>
+</html>
